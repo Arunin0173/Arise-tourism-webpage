@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#country1{
+    width: 50%;
+}
+#country2{
+    width: 50%;
+    position: relative;
+    right: -50%;
+}
+#country3{
+    width: 50%;
+}
+#country4{
+    width: 50%;
+    position: relative;
+    right: -50%;
+}
+#country5{
+    width: 50%;
+}
+#country6{
+    width: 50%;
+    position: relative;
+    right: -50%;
+}
+#country7{
+    width: 50%;
+}
+#country8{
+    width: 50%;
+    position: relative;
+    right: -50%;
+}

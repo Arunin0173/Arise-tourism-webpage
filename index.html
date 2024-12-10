@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./login.css" type="text/css"/> 
+    <script>
+        function handleClick(){
+            let email = document.getElementById('email').value;
+            let password =document.getElementById('password').value;
+            if((email==='admin@gmail.com')&&password==='admin'){
+                document.getElementById('message').innerHTML='Login Success';
+                document.getElementById('message').style.color='green';
+                localStorage.setItem('email',email);
+                window.location.href='dashboard.html';
+                
+            }else{
+                document.getElementById('message').innerHTML='Login Failed';
+                document.getElementById('message').style.color='red';
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    
+        <div class="container">
+           
+            <img src="./logo.png" alt="img"/>
+            <form>
+                <div id="message"></div>
+                
+                <input type="email" name="email" id="email" placeholder="Enter email address"/>
+
+                <input type="password" name="password" id="password" placeholder="Password"/>
+
+              
+            
+            </form>
+          
+            
+              
+            <button onclick="handleClick()">Log in</button>
+        </div>
+    
+</body>
+</html>
